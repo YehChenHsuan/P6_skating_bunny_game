@@ -1,9 +1,10 @@
 /**
  * ALICE ESL Phonics P6 - 小兔冰上拼讀大冒險題庫
  * 課本學習範圍：Page 04 - 12
- * 主題：Consonants (Nn, Vv, Xx, Zz) & CVC Word Families
+ * 主題：Consonants (Nn, Vv, Xx, Zz) & Pets
  */
 
+window.BOOK_ID = "P6";
 const P6_VOCABULARY = [
   {
     "id": "beep",
@@ -812,100 +813,99 @@ const PHONICS_GROUPS = {
   "Nn": [
     "name",
     "nest",
-    "next to",
-    "now",
     "night",
     "nine",
     "nun",
     "net"
   ],
-  "Vv": [
-    "vase",
-    "vest",
-    "vet",
-    "violin",
-    "volcano",
-    "van"
-  ],
-  "Xx": [
-    "x-ray",
-    "six",
-    "fox",
+  "Bb": [
+    "bunny",
+    "book",
+    "books",
     "box",
-    "ox",
-    "wax"
+    "brick",
+    "bicycle",
+    "beep",
+    "big"
   ],
-  "Zz": [
-    "zebra",
-    "zero",
-    "zipper",
-    "zoo",
-    "zoom",
-    "zone"
+  "Dd": [
+    "dog",
+    "dogs",
+    "donkey",
+    "duck",
+    "dump",
+    "dig",
+    "dish",
+    "drink"
+  ],
+  "Ff": [
+    "fox",
+    "fish",
+    "fun",
+    "funny",
+    "fly",
+    "fog",
+    "face",
+    "fan"
   ]
 };
 
 // 課文動作與問答情境題庫
 const ANIMAL_ACTION_QUESTIONS = [
   {
-    "subject": "Vet",
-    "action": "help",
-    "sentence": "The kind vet can help the sick dog.",
-    "question": "Who can help the sick dog?",
+    "sentence": "Sue has a pet. Her cute pet is a little bunny.",
+    "question": "What is Sue's pet?",
+    "ttsPrompt": "Sue has a pet. Her cute pet is a little bunny. What is Sue's pet?",
     "options": [
-      "vet",
-      "fox",
-      "nun"
+      "bunny",
+      "dog",
+      "duck"
     ],
-    "correct": "vet"
+    "correct": "bunny"
   },
   {
-    "subject": "Fox",
-    "action": "run",
-    "sentence": "The red fox can run in the foggy woods.",
-    "question": "What can the fox do?",
+    "sentence": "The red fox hides quietly inside the cardboard box.",
+    "question": "Where does the fox hide?",
+    "ttsPrompt": "The red fox hides quietly inside the cardboard box. Where does the fox hide?",
     "options": [
-      "run",
-      "read",
-      "ride"
+      "box",
+      "cup",
+      "pen"
     ],
-    "correct": "run"
+    "correct": "box"
   },
   {
-    "subject": "Zebra",
-    "action": "jump",
-    "sentence": "The zebra can jump in the zoo.",
-    "question": "Where is the zebra?",
+    "sentence": "Look at the gentle donkey standing beside the road.",
+    "question": "What animal is beside the road?",
+    "ttsPrompt": "Look at the gentle donkey standing beside the road. What animal is it?",
     "options": [
-      "zoo",
-      "van",
-      "box"
+      "donkey",
+      "horse",
+      "goat"
     ],
-    "correct": "zoo"
+    "correct": "donkey"
   },
   {
-    "subject": "Boy",
-    "action": "pat",
-    "sentence": "He can pat the lovely kitten.",
-    "question": "What can he do?",
+    "sentence": "The clever cat likes to drink fresh water.",
+    "question": "What does the animal do?",
+    "ttsPrompt": "The clever animal likes to drink fresh water. What does it do?",
+    "options": [
+      "drink",
+      "jump",
+      "kick"
+    ],
+    "correct": "drink"
+  },
+  {
+    "sentence": "He can pat his gentle dog on the head.",
+    "question": "What can he do to his dog?",
+    "ttsPrompt": "He can pat his gentle dog on the head. What can he do?",
     "options": [
       "pat",
       "pen",
-      "pan"
+      "cup"
     ],
     "correct": "pat"
-  },
-  {
-    "subject": "Girl",
-    "action": "play",
-    "sentence": "She can play the wooden violin.",
-    "question": "What can she play?",
-    "options": [
-      "violin",
-      "vest",
-      "vase"
-    ],
-    "correct": "violin"
   }
 ];
 
